@@ -11,9 +11,17 @@
 }
 .car-card {
   border: 1px solid #ccc;
-  padding: 1rem;
-  border-radius: 8px;
-  width: 200px;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 16px auto;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  text-align: left;
+}
+.car-info p {
+  margin: 4px 0;
+  font-size: 15px;
 }
 .car-card img {
   width: 100%;

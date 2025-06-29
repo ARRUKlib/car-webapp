@@ -62,7 +62,18 @@ function CarCatalog() {
     <div className="App">
       <div className="app-header">
         <h1>🚗 Car Catalog</h1>
-        <div className="add-car-form">
+        <a href="/" style={{ display: 'inline-block', marginBottom: '15px', textDecoration: 'none' }}>
+          <button style={{
+            padding: '8px 16px',
+            fontSize: '14px',
+            cursor: 'pointer',
+            backgroundColor: '#eee',
+            border: '1px solid #ccc',
+            borderRadius: '6px'
+          }}>← กลับหน้าแรก</button>
+        </a>
+
+        <div className="add-car-form" style={{ marginTop: '20px' }}>
           <input
             type="text"
             name="brand"
@@ -99,8 +110,12 @@ function CarCatalog() {
       ) : (
         cars.map((car, index) => (
           <div key={car.id || index} className="car-card">
-            <h3>{car.brand} {car.model} ({car.release_year})</h3>
-            <img src={car.image_url} alt={car.model} style={{ maxWidth: '300px' }} />
+            <div className="car-info">
+              <p><strong>Brand :</strong> {car.brand}</p>
+              <p><strong>Model :</strong> {car.model}</p>
+              <p><strong>Year :</strong> {car.release_year}</p>
+            </div>
+            <img src={car.image_url} alt={car.model} style={{ maxWidth: '100%', borderRadius: '8px', marginTop: '10px' }} />
           </div>
         ))
       )}
