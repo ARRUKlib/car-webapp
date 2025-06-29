@@ -13,7 +13,7 @@ app = FastAPI()
 # CORS ให้ frontend เรียก backend ได้
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # หรือระบุเฉพาะ http://192.168.1.100:3000
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -54,7 +54,7 @@ def read_cars():
             "brand": row[1],
             "model": row[2],
             "release_year": row[3],
-            "image_url": f"http://192.168.1.100:8000{row[4]}"
+            "image_url": f"http://localhost:8000{row[4]}"
         }
         for row in rows
     ]
@@ -93,5 +93,5 @@ def add_car(
         "brand": brand,
         "model": model,
         "release_year": release_year,
-        "image_url": f"http://192.168.1.100:8000{image_url}"
+        "image_url": f"http://localhost:8000{image_url}"
     }
