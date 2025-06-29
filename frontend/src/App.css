@@ -1,0 +1,38 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
+.car-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.car-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 200px;
+}
+.car-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.add-car-form input {
+  margin: 0 5px;
+  padding: 5px;
+}
+
+.add-car-form button {
+  padding: 6px 10px;
+  cursor: pointer;
+}

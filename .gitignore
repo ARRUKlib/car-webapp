@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# FastAPI static uploads
+backend/static/*
+
+# Node modules
+frontend/node_modules/
+*.log
+
+# Docker
+*.env
+*.db
+.env
+.vscode/
+.idea/
