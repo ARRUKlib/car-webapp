@@ -28,7 +28,7 @@ sudo docker compose up --build
 ```
 
 เมื่อรันเสร็จแล้ว เปิดเบราว์เซอร์ไปที่:
-- Frontend: [http://localhost:3000](http://localhost:3000)
+- Frontend: [http://localhost](http://localhost)
 - Backend API: [http://localhost:8000/cars](http://localhost:8000/cars)
 
 ---
