@@ -24,7 +24,7 @@ git clone https://github.com/ARRUKlib/car-webapp.git
 cd car-webapp
 
 # สั่ง build และ run ระบบทั้งหมด
-sudo docker-compose up --build
+sudo docker compose up --build
 ```
 
 เมื่อรันเสร็จแล้ว เปิดเบราว์เซอร์ไปที่:
